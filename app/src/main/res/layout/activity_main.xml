@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="SEJA BEM-VINDO"
+        android:textColor="@android:color/white"
+        android:textFontWeight="1000"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Consulte um evento, adicione ou até mesmo exclua."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/buttoncorner"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:onClick="adicionar"
+        android:text="Adicionar"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttoncorner"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:onClick="excluir"
+        android:text="Excluir"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttoncorner"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:onClick="consultar"
+        android:text="Ver os eventos"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="115dp"
+        app:srcCompat="@drawable/agenda" />
+
+</LinearLayout>

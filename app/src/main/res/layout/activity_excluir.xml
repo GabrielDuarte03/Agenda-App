@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Excluir"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="EXCLUIR EVENTO"
+        android:textColor="@android:color/white"
+        android:textFontWeight="1000"
+        android:textSize="35dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID DO EVENTO:"
+            android:textFontWeight="1000"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/textid"
+            android:fontFamily="@font/roboto"
+            />
+
+    </TableRow>
+
+
+
+
+    <Button
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/buttoncorner"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:text="excluir"
+        android:textSize="25dp"
+        android:id="@+id/excluir"
+        android:visibility="visible"
+        android:onClick="excluir"/>
+
+</LinearLayout>
